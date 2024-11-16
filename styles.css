@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* Navbar section styling */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #22092C;
+    color: #fff;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+.hamburger-menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span{
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px){
+
+     /* Navbar section media  */
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #22092C;
+        flex-direction: column;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+    .hamburger-menu{
+        display: flex;
+    }
+
+    .nav-links .active{
+         display: flex;
+    }
+
+
+}
+
+/* Home Section styling */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #22092C;
+    color: #fff;
+    text-align: center;
+}
+
+.home-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.home-content p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.cta-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #22092C;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover{
+    background-color: #008c9e;
+}
+
+@media (max-width: 768px){
+
+/* Home section media  */
+
+   .home-content h1{
+       font-size: 2rem;
+   }
+
+   .home-content p{
+       font-size: 1rem;
+   }
+
+   .cta-btn{
+       font-size: 0.9rem;
+       padding: 8px 16px;
+   }
+
+  
+}
+
+
+/* About Section styling */
+.about{
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    color: #22092C;
+    text-align: center;
+}
+
+.about-content{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #22092C;
+}
+
+.about p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+@media (max-width: 768px){
+    /* About Section media */
+    .about h2{
+       font-size: 1.5rem;
+   }
+    
+   .about p{
+       font-size: 0.9rem;
+   }
+}
+
+
+/* Contact Section styling */
+.contact{
+    padding: 60px 20px;
+    background-color: #22092C;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.contact p{
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.contact-form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border: 2px solid #00bcd4;
+}
+
+.contact-btn{
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #22092C;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backround-color 0.3s;
+}
+
+.contact-btn:hover{
+    background-color: #008c9e;
+}
+
+@media (max-width: 768px){
+
+    /*Contact section media  */
+    .contact h2{
+        font-size: 1.5rem;
+    }
+
+    .contact p{
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Section styling  */
+
+.footer{
+    padding: 30px 20px;
+    background-color: #22092C;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p{
+    margin:0;
+    font-size: 1rem;
+}
+
+.social-links{
+    margin-top: 10px;
+}
+
+.social-icon{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00bcd4;
+    font-size: 1rem;
+}
+
+.social-icon:hover{
+    color: #008c9e
+}
+
+@media (max-width: 600px){
+    .about h2, .projects h2, .contact h2{
+        font-size: 1.5rem;
+    }
+
+    .about p, .projects p, .contact p{
+        font-size: 0.9rem;
+    } 
+
+    .project-card{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
